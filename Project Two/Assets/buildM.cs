@@ -1,25 +1,30 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Collections.Specialized;
+using System.Threading;
 using UnityEngine;
 
 public class buildM: MonoBehaviour
 {
     private Transform myTransform;
-    private float speed;
+    public float speed;
+    public float Xrange;
+    
     // Start is called before the first frame update
     void Start()
     {
         myTransform = transform;
-        speed = Random.Range(100f, 210f);
+        speed = Random.Range(50f, 200f);
+        Xrange = Random.Range(880f, 1000f);
     }
     // Update is called once per frame
     void Update()
     {
         myTransform.position += Vector3.left * Time.deltaTime * speed;
 
-        if (myTransform.position.x < -30)
+        if (myTransform.position.x < -60)
         {
-            myTransform.position += Vector3.right * 880;
+            myTransform.position += Vector3.right * Xrange;
         }
     }
 }
