@@ -1691,7 +1691,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 968a05975e2c0624f819e2dd6afe6664, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fallMultiplier: 40
+  fallMultiplier: 45
   lowJumpMultiplier: 30
 --- !u!114 &1388878181
 MonoBehaviour:
@@ -1705,7 +1705,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7cefe9c67a92bb4eb1e61b5c4d21c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpVelocity: 45
+  jumpVelocity: 30
 --- !u!1 &1561471212
 GameObject:
   m_ObjectHideFlags: 0

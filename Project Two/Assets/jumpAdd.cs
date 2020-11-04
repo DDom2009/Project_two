@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class jumpAdd : MonoBehaviour
 {
-    [Range(25, 35)]
+    [Range(25, 30)]
     public float jumpVelocity;
 
 

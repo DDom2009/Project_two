@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class jump : MonoBehaviour 
 {
-    public float fallMultiplier = 35f;
-    public float lowJumpMultiplier = 25f;
+    public float fallMultiplier = 45f;
+    public float lowJumpMultiplier = 30f;
 
     Rigidbody rb;
     // Start is called before the first frame update
