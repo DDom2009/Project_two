@@ -16,7 +16,7 @@ public class RestartTrigger : MonoBehaviour
     // Update is called once per frame
     void OnTrigger(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "cube")
         {
             Application.LoadLevel(scene.name);
         }
