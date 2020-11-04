@@ -6,26 +6,25 @@ using UnityEngine;
 
 public class moveleft : MonoBehaviour
 {
-
-    public Transform myTransform;
+    private Transform myTransform;
     public float speed;
-
+    public float Xrange;
 
     // Start is called before the first frame update
     void Start()
     {
         myTransform = transform;
-        speed = 200;
+        speed = 40;
+        Xrange = Random.Range(880f, 1000f);
     }
-
-    // Update is called once per frame
-    void Update()
+    // Update is called once per frame
+    void Update()
     {
         myTransform.position += Vector3.left * Time.deltaTime * speed;
 
-        if (myTransform.position.x < 8)
+        if (myTransform.position.x < -60)
         {
-            myTransform.position += Vector3.right * 16;
+            myTransform.position += Vector3.right * Xrange;
         }
     }
 }
